@@ -1,0 +1,13 @@
+.main-container {
+  background-image: url("../assets/background.jpg");
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  mat-tab-group {
+    background-color: azure;
+  }
+}

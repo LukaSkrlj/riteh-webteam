@@ -1,3 +1,14 @@
 import { Route } from '@angular/router';
+import { CalendarComponent } from './calendar/calendar.component';
 
-export const appRoutes: Route[] = [];
+export const appRoutes: Route[] = [
+  {
+    path: '',
+    component: CalendarComponent
+  },
+  {
+    path: 'calendar-remote',
+    loadChildren: () =>
+      import('calendar-remote/Module').then((m) => m.RemoteEntryModule)
+  }
+];
