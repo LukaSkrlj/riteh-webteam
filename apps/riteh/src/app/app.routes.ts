@@ -7,6 +7,11 @@ export const appRoutes: Route[] = [
     component: CalendarComponent
   },
   {
+    path: 'posts-remote',
+    loadChildren: () =>
+      import('posts-remote/Module').then((m) => m.RemoteEntryModule)
+  },
+  {
     path: 'calendar-remote',
     loadChildren: () =>
       import('calendar-remote/Module').then((m) => m.RemoteEntryModule)

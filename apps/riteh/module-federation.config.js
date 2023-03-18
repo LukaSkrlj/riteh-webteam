@@ -1,4 +1,4 @@
 module.exports = {
   name: 'riteh',
-  remotes: ['calendar-remote'],
+  remotes: ['posts-remote', 'calendar-remote']
 };

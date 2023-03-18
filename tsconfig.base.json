@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@webteam/posts": ["libs/posts/src/index.ts"],
       "@webteam/search": ["libs/search/src/index.ts"]
     }
   },
